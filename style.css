@@ -4,25 +4,389 @@ padding: 0;
 box-sizing: border-box;
 }
 
+:root{
+    color: rgb(255, 81, 0);
+    color: white;
+
+
+
+}
+
 body{
+background-color: var(--cor-bg);
+
+}
+
+.sec_patudos{
+background-color:  var(--cor-bg-2);
+
+}
+
+.sec_quem_somos{
+background-color: var(--cor-bg);
+    
+}
+
+.sec_contato{
+background-color: var(--cor-bg-2);
+
+}
+
+footer{
+background-color:  var(--cor-bg);
+
+}
+/*------- Classes --------  */
+
+
+
+.container {
     display: flex;
     justify-content: center;
+    width: 60%;
+    max-width: 900px;
+    margin: auto;
+
+}
+
+/* Header LOGO / NAV*/
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color:rgb(0, 0, 0);
-    height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(255, 81, 0);
 }
 
-.container{
-    width: 600px;
-    height: 300px;
-    background-color:darkkhaki;
-    border-radius: 20px;
+.logo img {
+    width: 130px;
+    margin-left: -12px;
 }
 
-.conteudo:target{
+.header_container ul {
+    display: flex;
+    padding: 0%;
+}
+
+.header_container li {
+    margin: 0 10px;
+    list-style: none;
+    font-size: 20px;
+    background-color: rgb(255, 81, 0);
+}
+
+.header_container a {
+    text-decoration: none;
+    color: white;
+}
+
+.header_container a:hover {
+    font-weight: bold;
+}
+
+/* Header LOGO / NAV*/
+
+
+
+/*  Sec_Principal */
+
+.botao_patudo {
+    text-decoration: none;
+    color: var(--cor-bg-2);
+
+}
+
+.container_principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 81, 0);
+}
+
+.container_principal img {
+    width: 400px;
+    height: auto;
+    transform: translateY(42px);
+
+}
+
+.adote_container {
+    width: 50%;
+    color: var(--cor-bg-2);
+}
+
+.adote_container h1 {
+    font-weight: normal;
+    font-size: 60px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.adote_container p {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.adote_container button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--cor-bg);
+    border: solid 2px var(--cor-bg-2);
+    border-radius: 10px;
+    color: var(--cor-bg-2);
+}
+
+.adote_container button:hover {
+    background-color: seagreen;
+    border: solid 2px seagreen;
+}
+
+
+/*  Sec_Principal */
+
+
+
+/*  Sec_Patudos*/
+
+.patudos_titulo_container {
+    display: flex;
+    justify-content: start;
+}
+
+.patudos_titulo{
+    color: tomato;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.container_patudos {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.container_patudos img {
+    width: 100%;
+    border-radius: 4% 4% 0 0;
+    border-bottom: solid 2px var(--cor-bg);
+}
+
+.patudo_box {
+    border: solid 2px rgb(255, 81, 0);
+    display: flex;
+    flex-flow: column;
+    margin: 20px 0;
+    width: 250px;
+    border-radius: 4%;
+}
+
+.titulo_patudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    height: auto;
+    width: auto;
+    margin: 0 10px;
+}
+
+.titulo_patudo h2 {
+    font-size: 100% ;
+    color: rgb(255, 81, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+user agent stylesheet
+h2 {
     display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold ;
 }
 
-.conteudo:not(target){
-    display: none;
+.botao {
+    padding: 30px;
+    background-color: var(--cor-bg);
+    border-radius: 100%;
+    transform: translateY(30px);
+    background-image: url(https://github.com/INDESBR/bootcamp_projeto04/blob/master/Imagens/heart.png?raw=true);
+    background-size: 40%;
+    background-repeat:no-repeat;
+    background-position: center;
 }
+
+.botao:hover {
+    background-color: seagreen;
+    background-image: url(https://github.com/INDESBR/bootcamp_projeto04/blob/master/Imagens/like.png?raw=true);
+}
+
+
+
+/*  Sec_Patudos*/
+
+
+
+/*   Sec_Quem_Somos   */ 
+
+.sec_quem_somos {
+    background-color: rgb(255, 81, 0); 
+}
+.quem_somos_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+background-color: (255, 81, 0);
+}
+
+.quem_somos_container img {
+
+    width: 250px;
+    clip-path: circle(40%);
+}
+
+.quem_somos_content {
+    padding-left: 40px;
+  
+}
+
+.quem_somos_content h2 {
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: normal;
+}
+
+.quem_somos_content p {
+    font-size: 20px;
+}
+
+
+/*   Sec_Quem_Somos   */
+
+
+
+/*   Contato   */ 
+
+.contato_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.entre_em_contato {
+    padding-right: 40px;
+    padding-top: 20px;
+    color:  rgb(255, 81, 0);
+}
+
+.entre_em_contato h2 {
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 'Abel' sans-serif;
+}
+
+.entre_em_contato p {
+    font-size: 20px;
+}
+
+
+fieldset{
+    border: none;
+    padding: 20px 0;
+   
+}
+
+.enviar{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: var(--cor-bg);
+    border: solid 2px var(--cor-bg-2);
+    border-radius: 10px;
+    color: var(--cor-bg-2);
+}
+
+.enviar a {
+    text-decoration: none;
+    color: var(--cor-bg-2);
+}
+
+.enviar:hover {
+    background-color: seagreen;
+}
+
+input {
+    margin: 10px;
+    width: 94%;
+    padding: 10px;
+    border: solid 2px rgb(255, 81, 0);
+    border-radius: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder {
+    color: var(--cor-bg);
+    font-size: 20px;
+}
+
+textarea {
+    border: solid 2px var(--cor-bg);
+    border-radius: 10px;
+    
+}
+
+textarea:focus {
+    outline: none;
+    
+    
+}
+
+textarea::placeholder {
+    color: var(--cor-bg);
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.enviar {
+    margin: 10px 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color:  rgb(255, 81, 0);
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+}
+#mensagem {
+    margin: 10px 10px;
+}
+
+textarea {
+    border: solid 2px rgb(255, 81, 0);
+ border-radius: 10px;}
+
+/*   Contato   */
+
+
+
+/*   footer_container   */ 
+
+footer {
+    font-size: 20px;
+    color: var(--cor-bg-2);
+    padding: 20px 0;
+background-color: rgb(255, 81, 0);
+}
+
+/*   footer_container   */
